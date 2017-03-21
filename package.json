@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-test",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Cordova Plugin Test",
   "cordova": {
     "id": "cordova-plugin-test",
