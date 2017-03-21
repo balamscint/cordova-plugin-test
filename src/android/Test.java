@@ -33,6 +33,12 @@ import org.json.JSONObject;
  */
 public class Test extends CordovaPlugin {
 
+    /*@Override
+    public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+        super.initialize(cordova, webView);
+        // your init code here
+    }*/
+
     /**
      * Executes the request and returns PluginResult.
      *
@@ -64,6 +70,22 @@ public class Test extends CordovaPlugin {
 
         result.setKeepCallback(true);
         callbackContext.sendPluginResult(result);
+
+        /*
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            public void run() {
+                ...
+                callbackContext.success(); // Thread-safe.
+            }
+        });
+
+        cordova.getThreadPool().execute(new Runnable() {
+            public void run() {
+                ...
+                callbackContext.success(); // Thread-safe.
+            }
+        });
+        */
         return b;
     }
 }

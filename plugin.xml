@@ -27,14 +27,21 @@
     <license>Apache 2.0</license>
     <keywords>cordova,test</keywords>
     <issue></issue>
+    <repo>https://github.com/balamscint/cordova-plugin-test.git</repo>
 
-    
     <js-module src="www/test.js" name="Test">
         <clobbers target="navigator.Test" />
     </js-module>  
 
+    <!--<dependency id="cordova-plugin-compat" version="^1.0.0" />-->
+
     <!-- android -->
     <platform name="android">
+
+      <!--<config-file target="AndroidManifest.xml" parent="/*">
+          <uses-permission android:name="android.permission.READ_CONTACTS" />
+      </config-file>-->
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Test">
                 <param name="android-package" value="tech.gnb.test.Test"/>
@@ -42,6 +49,8 @@
         </config-file>        
 
         <source-file src="src/android/Test.java" target-dir="src/tech/gnb/test" />
+
+        <info>cordova Plugin Test</info>
 
       </platform>  
 
