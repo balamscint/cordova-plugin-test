@@ -29,8 +29,8 @@
     <issue></issue>
 
     
-    <js-module src="www/test.js" name="test">
-        <clobbers target="navigator.test" />
+    <js-module src="www/test.js" name="Test">
+        <clobbers target="navigator.Test" />
     </js-module>  
 
     <!-- android -->

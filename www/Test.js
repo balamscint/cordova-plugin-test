@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-test.Test", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -31,5 +30,3 @@ Test.prototype.showWithOptions = function (successCallback, errorCallback, txt) 
 };
 
 module.exports = new Test();
-
-});
